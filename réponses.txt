@@ -1,0 +1,60 @@
+Elsa Loubelle 2ESGI
+30/09/2022
+
+Exercice git final
+
+Exercice 1
+
+-Quelles sont les branches disponibles ?
+Les branches disponnibles sont : gh-page et spdx-license-templates sur la page github. mais quand on clone le projet, on a que la branche gh-pages
+
+Exercice 2
+
+-Quel est le numéro de la dernière pull request ?
+Le numéro de la dernière pull request est la 1028
+
+-Combien de commit contient la pull request #550 ?
+la pull request 550 contient 2 commits
+
+-Quel est le numéro, combien de commit, et quel est l’auteur dans la pull request du
+commit de merge 8061f2f ?
+
+Le numéro de la pull request : 549
+Il y'a eu 2 commits 
+L'auteur de la pull request est Mike Linksvayer <mlinksva@github.com>
+
+Exercice 3
+
+-Quelle est la commande pour revenir à la version précédente sur le fichier “index.html” ?
+
+on regarde d'abord les commit du fichier index.html en faisant git log index.html. 
+Le dernier commit est le 67a6eb306652b3a5d96bda983121befc13e6086f. 
+pour revenir à cette version on fait git checkout <67a6eb306652b3a5d96bda983121befc13e6086f> index.html
+
+-Un plugin javascript a été supprimé dans le commit b30306e502b99aabab256a5d2f68e8d50ba5072a, quel est le nom du plugin
+supprimé ?
+
+dans le commit b30306e502b99aabab256a5d2f68e8d50ba5072a le plugin supprimé est le auto-complete.min.js
+
+-Quelle est la commande pour voir les fichiers modifiés dans ce commit ?
+git show b30306e502b99aabab256a5d2f68e8d50ba5072a
+
+-Quelle est la commande pour récupérer le plugin supprimé ?
+la commande pour récupérer le plugin supprimé est : git reset auto-complete.min.js
+
+Exercice 4
+-Le dossier “_licenses” contient les licences qui sont affichées sur le site. Vous allez ajouter
+une license à votre nom (par exemple “theau-debureau-1.0.txt”) et commiter le résultat.
+
+On créer le fichier dans le dossier licence, on fait git add _licenses/Elsa_Loubelle_1.0.txt et git commit
+
+-Comment vérifier si vous êtes à jour avec le dépôt distant?
+
+On vérifie si on est à jour avec la commande git status
+
+-Envoyer votre dernier commit
+
+git push 
+
+
+
